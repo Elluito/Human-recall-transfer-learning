@@ -1,0 +1,12 @@
+# Tested with Python 3.8-3.11 (TensorFlow does not yet support newer
+# interpreters as of this writing). Use a virtualenv/conda env pinned to
+# one of those versions.
+numpy>=1.19,<2.0
+scipy>=1.5
+matplotlib>=3.3
+scikit-learn>=0.24
+# The DQN agent (qlearningAgents.py) and memory unit (memory_unit.py) mix
+# tf.compat.v1 losses with tf.keras layers/optimizers; any TF2 release in
+# this range works, with or without a GPU (tf.device("GPU:0") falls back to
+# CPU automatically via TF2's default soft device placement).
+tensorflow>=2.4,<2.16
