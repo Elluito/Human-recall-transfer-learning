@@ -12,7 +12,7 @@ and when it does, the agent's action is chosen from a blend of the old
 task's Q-values and the new task's Q-values instead of the new task's
 Q-values alone. This directory contains everything needed to train the
 tasks, train the memory unit, run the transfer experiments, and reproduce
-the paper's figures.
+the projects's figures.
 
 ## Repository layout
 
